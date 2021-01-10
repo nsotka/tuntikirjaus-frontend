@@ -1,0 +1,186 @@
+.container {
+    height: 100%;
+}
+
+.HeaderText {
+    font-size: 2rem;
+}
+
+.Projects-header-row {
+    background-color: white;
+}
+
+.Projects-header-tabs {
+    background-color: white;
+    margin-top: 3vh;
+    font-size: calc(10px + 2vmin);
+    border-radius: 15px 15px 0px 0px;
+}
+
+.Projects-header-tabs > p {
+    user-select: none;
+}
+
+.Projects-header-tabs-on {
+    padding: 1vh;
+    border: none;
+    box-shadow: 0px 23px 10px -5px;
+}
+
+.Projects-header-tabs-off {
+    border: 2px solid black;
+    opacity: 10%;
+}
+
+.Action-row {
+    margin: 3px;
+    background-color: white;
+    padding: 2vh;
+    box-shadow: 0px 3px 10px -5px;
+}
+
+.Edit-button {
+    padding: 0;
+    border: 0;
+    height: 2rem;
+    width: 2rem;
+    opacity: 0.5;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.Edit-button:focus {
+    box-shadow: none;
+}
+
+
+.Edit-button > span {
+    pointer-events: none;
+}
+
+.Projects-body {
+    min-height: 65vh;
+    background-color: white;
+    padding: 3vh;
+    box-shadow: 0px 13px 10px -5px;
+}
+
+.Button-signout {
+    font-weight: bold;
+}
+
+.card-header {
+    background-color: white;
+}
+
+.Item-card {
+    border:none;
+}
+
+.Card-bg {
+    background-color: white;
+}
+
+.Project-card-body {
+    min-height: 8rem;
+    border: 0.1rem solid rgba(128, 128, 128, 0.3);
+    border-bottom: none;
+}
+
+.card-title {
+    font-size: 1.2rem
+}
+
+.Task-card-body {
+    border-top-left-radius: 50px;
+    border: 0.1rem solid rgba(128, 128, 128, 0.3);
+}
+
+.card-footer {
+    border-top: none;
+    border: 0.1rem solid rgba(128, 128, 128, 0.3);
+}
+
+.No-link {
+    color: black;
+    text-decoration: none !important;
+}
+
+.No-link:hover {
+    color: inherit;
+}
+
+.Header-tabs-on {
+    padding: 1vh;
+    border-bottom: 2px dotted rgba(0, 0, 0, 0.1);
+}
+
+.Tasks-body {
+    background-color: white;
+    padding: 3vh;
+    box-shadow: 0px 13px 10px -5px;
+    min-height: 65vh;
+}
+
+@media (max-width: 574px) {
+
+    .Edit-button {
+        opacity: 1;
+    }
+
+    .HeaderText {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:575px) {
+    
+    .card-deck > .card
+    {
+        width: 90%;
+        flex-wrap: wrap;
+        flex: initial;
+    }
+
+    .Edit-button {
+        opacity: 1;
+    }
+}
+
+@media (min-width:767px) {
+
+    .card-deck > .card
+    {
+        width: 45%;
+        flex-wrap: wrap;
+        flex: initial;
+    }
+
+    .Project-card:hover {
+        transform: scale(1.10);
+    }
+
+    .Edit-hide {
+        opacity: 0;
+    }
+
+    .Edit-button {
+        transform: scale(0.8);
+        transform-origin : 50% 100%;
+    }
+    
+    .Edit-button:hover {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (min-width:991px) {
+    
+    .card-deck > .card
+    {
+        width: 29%;
+        flex-wrap: wrap;
+        flex: initial;
+    }
+}

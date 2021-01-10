@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  background-color: rgb(247, 247, 244);
 }
 
 .App-logo {
@@ -26,6 +26,11 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: rgb(247, 247, 244);
 }
 
 @keyframes App-logo-spin {
